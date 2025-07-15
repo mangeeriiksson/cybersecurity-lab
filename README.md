@@ -1,10 +1,24 @@
-# Cybersecurity Lab Environment.
+# Cybersecurity Lab Environment
 
-This repository documents the design, installation, and configuration of my personal cybersecurity lab. The environment is built to simulate real-world scenarios for learning, testing, and practicing offensive and defensive security techniques.
+This project documents the design, deployment, and continuous improvement of my personal cybersecurity lab, built to simulate real-world enterprise environments for hands-on practice in offensive and defensive security.
+
+The lab is designed to serve as a **comprehensive platform** to learn and demonstrate key competencies across multiple areas of cybersecurity, including network segmentation, intrusion detection and prevention, SIEM implementation, traffic monitoring, virtualization, and penetration testing.
 
 ---
 
-##  Lab Infrastructure Overview
+### 🎯 Objectives and Purpose
+
+The primary objectives of this lab environment are:
+
+✅ To gain practical experience configuring and securing a hypervisor-based infrastructure  
+✅ To practice deploying, hardening, and managing security tools commonly used in enterprise networks  
+✅ To create realistic scenarios for testing incident detection, alerting, and response workflows  
+✅ To conduct vulnerability assessments and penetration testing in a safe, controlled setting  
+✅ To develop automation scripts to streamline security operations and maintenance tasks
+
+---
+
+## 🛠️ Lab Infrastructure Overview
 
 **Hypervisor:**
 - Proxmox VE installed on HP ProLiant DL380e Gen8 server via iLO 4 remote management
@@ -24,84 +38,84 @@ This repository documents the design, installation, and configuration of my pers
 
 ---
 
-##  Projects and Configurations
+## ⚙️ Projects and Configurations
 
-###  1. Proxmox Installation and Configuration
+### 🔹 1. Proxmox Installation and Configuration
 - Installed Proxmox VE on dedicated SSD
 - Configured networking and storage pools
 - Enabled no-subscription repositories
 - Set up email alerts and backup schedules
 
-[Proxmox Setup Details](proxmox-setup/README.md)
+➡️ *Proxmox Setup Details*
 
 ---
 
-###  2. pfSense Firewall Hardening
+### 🔹 2. pfSense Firewall Hardening
 - Deployed pfSense VM as the primary firewall
 - Configured:
-- VLANs
-- Firewall rules
-- Geo-blocking
-- pfBlockerNG
-- DNS filtering
+  - VLANs
+  - Firewall rules
+  - Geo-blocking
+  - pfBlockerNG
+  - DNS filtering
 - Enabled Suricata inline mode for IDS/IPS
 
-[pfSense Configuration](pfsense-setup/README.md)
+➡️ *pfSense Configuration*
 
 ---
 
-###  3. Suricata IDS/IPS
+### 🔹 3. Suricata IDS/IPS
 - Installed Suricata for real-time intrusion detection
 - Tuned rulesets
 - Integrated with pfSense
 - Enabled alerting and logging
 
-[Suricata Configuration](suricata-setup/README.md)
+➡️ *Suricata Configuration*
 
 ---
 
-###  4. Wazuh SIEM
+### 🔹 4. Wazuh SIEM
 - Deployed Wazuh server and agents
 - Collected logs from all lab systems
 - Configured dashboards and rules
 - Tested alerting workflows
 
-[Wazuh Setup](wazuh-setup/README.md)
+➡️ *Wazuh Setup*
 
 ---
 
-###  5. ntopng Network Monitoring
+### 🔹 5. ntopng Network Monitoring
 - Monitored traffic flows and bandwidth
 - Visualized protocols and hosts
 - Created custom traffic alerts
 
- [ntopng Monitoring](ntopng-monitoring/README.md)
+➡️ *ntopng Monitoring*
 
 ---
 
-### 6. Security Scripts and Automation
+### 🔹 6. Security Scripts and Automation
 - Bash and Python scripts for:
-- Automated backups
-- Log parsing
-- Vulnerability scanning
-- Helper scripts for lab setup and reset
+  - Automated backups
+  - Log parsing
+  - Vulnerability scanning
+  - Helper scripts for lab setup and reset
 
- [Scripts](scripts/README.md)
+➡️ *Scripts*
 
 ---
 
-###  7. Capture the Flag (CTF) Writeups
+### 🔹 7. Capture the Flag (CTF) Writeups
 - Documented solutions for:
-- HackTheBox
-- TryHackMe
-- VulnHub
+  - HackTheBox
+  - TryHackMe
+  - VulnHub
 - Included screenshots and methodology
 
-[CTF Writeups](ctf-writeups/README.md)
+➡️ *CTF Writeups*
 
 ---
 
-## Key Skills and Tools Demonstrated
+## 💡 Key Skills and Tools Demonstrated
 
 - Virtualization and hypervisor administration
 - Network segmentation and firewall configuration
@@ -112,18 +126,16 @@ This repository documents the design, installation, and configuration of my pers
 - Scripting and automation
 
 ---
-# 
-## Screenshots
 
-*(You can add images here, e.g. Proxmox dashboard, pfSense interfaces, Wazuh alerts, Suricata logs.)*
+## 📸 Screenshots
+
+*(You can add images here, e.g., Proxmox dashboard, pfSense interfaces, Wazuh alerts, Suricata logs)*
 
 ---
 
-## Contact
+## 📫 Contact
 
-If you want to know more about my lab environment or discuss cybersecurity projects:
+If you want to know more about this lab environment or discuss cybersecurity projects:
 
 - **LinkedIn:** 
 - **Email:** 
-
----
