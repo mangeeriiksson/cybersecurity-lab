@@ -123,7 +123,7 @@ This repository documents the design, installation, and configuration of my pers
 
 If you want to know more about my lab environment or discuss cybersecurity projects:
 
-- **LinkedIn:** [Your LinkedIn URL]
-- **Email:** [Your Email Address]
+- **LinkedIn:** 
+- **Email:** 
 
 ---
