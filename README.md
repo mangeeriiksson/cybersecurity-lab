@@ -106,12 +106,7 @@ The primary objectives of this lab environment are:
 
 ### 🔹 7. Capture the Flag (CTF) Writeups
 - Documented solutions for:
-  - HackTheBox
   - TryHackMe
-  - VulnHub
-- Included screenshots and methodology
-
-➡️ *CTF Writeups*
 
 ---
 
