@@ -1,136 +1,141 @@
-# Cybersecurity Lab Environment
+# * Cybersecurity Lab & CTF Portfolio
 
-This project documents the design, deployment, and continuous improvement of my personal cybersecurity lab, built to simulate real-world enterprise environments for hands-on practice in offensive and defensive security.
+Welcome to my cybersecurity portfolio repository. This project documents the design, configuration, and continuous development of my personal cybersecurity lab environment, as well as writeups and tooling from Capture the Flag (CTF) challenges.  
 
-The lab is designed to serve as a **comprehensive platform** to learn and demonstrate key competencies across multiple areas of cybersecurity, including network segmentation, intrusion detection and prevention, SIEM implementation, traffic monitoring, virtualization, and penetration testing.
-
----
-
-### 🎯 Objectives and Purpose
-
-The primary objectives of this lab environment are:
-
-✅ To gain practical experience configuring and securing a hypervisor-based infrastructure  
-✅ To practice deploying, hardening, and managing security tools commonly used in enterprise networks  
-✅ To create realistic scenarios for testing incident detection, alerting, and response workflows  
-✅ To conduct vulnerability assessments and penetration testing in a safe, controlled setting  
-✅ To develop automation scripts to streamline security operations and maintenance tasks
+The lab and projects are built to simulate real-world scenarios for practicing offensive and defensive security skills.
 
 ---
 
-## 🛠️ Lab Infrastructure Overview
+## * Objectives and Purpose
 
-**Hypervisor:**
-- Proxmox VE installed on HP ProLiant DL380e Gen8 server via iLO 4 remote management
+The primary goals of this environment and portfolio are:
 
-**Virtual Machines:**
+* Gain hands-on experience configuring and securing enterprise-grade infrastructure  
+* Deploy, harden, and integrate industry-standard security tools  
+* Practice vulnerability assessment, exploitation, and incident response workflows  
+* Automate security operations through scripting and orchestration  
+* Document learnings and methodologies to share knowledge and demonstrate capability
+
+---
+
+## * Lab Infrastructure Overview
+
+**Hypervisor:**  
+- Proxmox VE installed on an HP ProLiant DL380e Gen8 server via iLO 4 remote management
+
+**Virtual Machines:**  
 - **pfSense:** Firewall and network segmentation
 - **Suricata:** Intrusion Detection and Prevention System (IDS/IPS)
 - **Wazuh:** SIEM and log management
-- **ntopng:** Network monitoring and traffic analysis
-- **Kali Linux:** Offensive security and testing
-- Additional Linux/Windows targets for vulnerability assessment and exploitation
+- **ntopng:** Network traffic monitoring and analysis
+- **Kali Linux:** Offensive security testing
+- Additional Linux/Windows targets for vulnerability assessment
 
-**Networking:**
+**Networking:**  
 - Dedicated management VLAN
 - Segmented lab networks with VLAN tagging
 - Internal DNS and DHCP via pfSense
 
----
-
-## ⚙️ Projects and Configurations
-
-### 🔹 1. Proxmox Installation and Configuration
-- Installed Proxmox VE on dedicated SSD
-- Configured networking and storage pools
-- Enabled no-subscription repositories
-- Set up email alerts and backup schedules
-
-➡️ *Proxmox Setup Details*
+**Storage:**  
+- Local SSD for Proxmox and VM storage
+- NFS shares for backups and snapshots
 
 ---
 
-### 🔹 2. pfSense Firewall Hardening
-- Deployed pfSense VM as the primary firewall
-- Configured:
-  - VLANs
-  - Firewall rules
-  - Geo-blocking
-  - pfBlockerNG
-  - DNS filtering
-- Enabled Suricata inline mode for IDS/IPS
+## * Projects and Configurations
 
-➡️ *pfSense Configuration*
+Below are the main components and configurations in this lab environment:
 
----
+### * Proxmox Installation and Configuration
+- Bare-metal installation via iLO remote ISO
+- Storage and network configuration
+- Email alerts and backups
 
-### 🔹 3. Suricata IDS/IPS
-- Installed Suricata for real-time intrusion detection
-- Tuned rulesets
-- Integrated with pfSense
-- Enabled alerting and logging
-
-➡️ *Suricata Configuration*
+➡ *Proxmox Setup Details*
 
 ---
 
-### 🔹 4. Wazuh SIEM
-- Deployed Wazuh server and agents
-- Collected logs from all lab systems
-- Configured dashboards and rules
-- Tested alerting workflows
+### * pfSense Firewall Hardening
+- VLAN segmentation and firewall rule sets
+- Geo-blocking and DNS filtering with pfBlockerNG
+- Suricata inline IDS/IPS integration
 
-➡️ *Wazuh Setup*
-
----
-
-### 🔹 5. ntopng Network Monitoring
-- Monitored traffic flows and bandwidth
-- Visualized protocols and hosts
-- Created custom traffic alerts
-
-➡️ *ntopng Monitoring*
+➡ *pfSense Configuration*
 
 ---
 
-### 🔹 6. Security Scripts and Automation
+### * Suricata IDS/IPS
+- Inline deployment with pfSense
+- Custom rule tuning
+- Logging and alerting
+
+➡ *Suricata Configuration*
+
+---
+
+### * Wazuh SIEM
+- Centralized log collection from all lab systems
+- Custom dashboards and detection rules
+- Test scenarios for alert workflows
+
+➡ *Wazuh Setup*
+
+---
+
+### * ntopng Network Monitoring
+- Flow analysis and per-host monitoring
+- Custom traffic alerts and reports
+
+➡ *ntopng Monitoring*
+
+---
+
+###  Security Scripts and Automation
 - Bash and Python scripts for:
   - Automated backups
-  - Log parsing
+  - Log parsing and enrichment
   - Vulnerability scanning
-  - Helper scripts for lab setup and reset
 
-➡️ *Scripts*
-
----
-
-### 🔹 7. Capture the Flag (CTF) Writeups
-- Documented solutions for:
-  - TryHackMe
+➡ *Scripts*
 
 ---
 
-## 💡 Key Skills and Tools Demonstrated
+## * CTF and Vulnerability Research Repositories
 
-- Virtualization and hypervisor administration
-- Network segmentation and firewall configuration
-- IDS/IPS deployment and tuning
-- SIEM configuration and alerting
-- Traffic monitoring and analysis
-- Offensive security testing
-- Scripting and automation
+In addition to the lab environment, I maintain separate repositories documenting CTF challenges, writeups, and tooling:
 
----
-
-## 📸 Screenshots
-
-*(You can add images here, e.g., Proxmox dashboard, pfSense interfaces, Wazuh alerts, Suricata logs)*
+- [VulnForge CTF](https://github.com/mangeeriiksson/VulnForge-CTF) – Vulnerability research and exploit development from VulnForge scenarios.
+- [Ancicent](https://github.com/mangeeriiksson/ancicent) – Custom Python tools used in CTF exercises.
+- [Mythic Journey CTF](https://github.com/mangeeriiksson/Mythic.journey.ctf) – Writeups and solutions for Mythic Journey CTF.
+- [WRAPP3.0](https://github.com/mangeeriiksson/WRAPP3.0) – Web exploitation challenges and scripts.
+- [Toolbox CTF](https://github.com/mangeeriiksson/toolbox.CTF) – Python utilities for automating CTF workflows.
 
 ---
 
-## 📫 Contact
+## Key Skills and Tools Demonstrated
 
-If you want to know more about this lab environment or discuss cybersecurity projects:
+- Hypervisor and virtualization administration (Proxmox)
+- Network segmentation and firewall configuration (pfSense)
+- IDS/IPS deployment and tuning (Suricata)
+- SIEM implementation and alerting (Wazuh)
+- Traffic monitoring and analysis (ntopng)
+- Offensive security techniques (Kali Linux)
+- Scripting and automation (Bash, Python)
+- Vulnerability research and exploit development
+
+---
+
+## * Screenshots and Documentation
+
+*(Add screenshots of Proxmox, pfSense, Suricata, Wazuh dashboards here)*
+
+---
+
+## * Contact
+
+If you want to learn more about my lab environment, CTF research, or discuss collaboration opportunities:
 
 - **LinkedIn:** 
 - **Email:** 
+
+---
