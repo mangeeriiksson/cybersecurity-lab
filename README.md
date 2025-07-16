@@ -128,7 +128,7 @@ In addition to the lab environment, I maintain separate repositories documenting
 ## * Screenshots and Documentation
 
 *(Add screenshots of Proxmox, pfSense, Suricata, Wazuh dashboards here)*
-
+*(“Note: Screenshots and sample configurations will be added progressively.”)*
 ---
 
 ## * Contact
