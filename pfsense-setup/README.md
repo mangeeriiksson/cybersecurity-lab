@@ -63,6 +63,7 @@ Daily backups of the configuration are automated and stored securely.
 ## * Screenshots
 
 *(Add screenshots here, e.g., VLAN interface configuration, pfBlockerNG dashboard, firewall rules.)*
+*(Comming soon)*
 
 ---
 

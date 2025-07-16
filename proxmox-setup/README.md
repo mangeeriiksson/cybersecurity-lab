@@ -68,6 +68,7 @@ Proxmox is monitored via:
 ## * Screenshots
 
 *(Add screenshots here, e.g., Proxmox dashboard, VM configuration, storage pools.)*
+*(Comming soon)*
 
 ---
 

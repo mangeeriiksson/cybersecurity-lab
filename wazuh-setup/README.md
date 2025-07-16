@@ -68,6 +68,7 @@ The Wazuh dashboard provides:
 ## * Screenshots
 
 *(Add screenshots here, e.g., Wazuh dashboards, ruleset configuration, alert views.)*
+*(Comming soon)*
 
 ---
 
