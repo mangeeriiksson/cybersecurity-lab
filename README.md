@@ -51,7 +51,7 @@ Below are the main components and configurations in this lab environment:
 - Storage and network configuration
 - Email alerts and backups
 
-➡ *Proxmox Setup Details*
+ *Proxmox Setup Details*
 
 ---
 
@@ -60,7 +60,7 @@ Below are the main components and configurations in this lab environment:
 - Geo-blocking and DNS filtering with pfBlockerNG
 - Suricata inline IDS/IPS integration
 
-➡ *pfSense Configuration*
+ *pfSense Configuration*
 
 ---
 
@@ -69,7 +69,7 @@ Below are the main components and configurations in this lab environment:
 - Custom rule tuning
 - Logging and alerting
 
-➡ *Suricata Configuration*
+ *Suricata Configuration*
 
 ---
 
@@ -78,7 +78,7 @@ Below are the main components and configurations in this lab environment:
 - Custom dashboards and detection rules
 - Test scenarios for alert workflows
 
-➡ *Wazuh Setup*
+ *Wazuh Setup*
 
 ---
 
@@ -86,7 +86,7 @@ Below are the main components and configurations in this lab environment:
 - Flow analysis and per-host monitoring
 - Custom traffic alerts and reports
 
-➡ *ntopng Monitoring*
+ *ntopng Monitoring*
 
 ---
 
@@ -96,7 +96,7 @@ Below are the main components and configurations in this lab environment:
   - Log parsing and enrichment
   - Vulnerability scanning
 
-➡ *Scripts*
+ *Scripts*
 
 ---
 
